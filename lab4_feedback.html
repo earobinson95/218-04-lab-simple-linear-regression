@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.132">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lab 4 Feedback</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="lab4_feedback_files/libs/clipboard/clipboard.min.js"></script>
+<script src="lab4_feedback_files/libs/quarto-html/quarto.js"></script>
+<script src="lab4_feedback_files/libs/quarto-html/popper.min.js"></script>
+<script src="lab4_feedback_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="lab4_feedback_files/libs/quarto-html/anchor.min.js"></script>
+<link href="lab4_feedback_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="lab4_feedback_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="lab4_feedback_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="lab4_feedback_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="lab4_feedback_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 4 Feedback</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>Answers to everything: 5 points</p>
+<p>Don’t have answers to 1-2 questions: 4.5</p>
+<p>Don’t have answers to 3-4 questions: 4</p>
+<hr>
+<section id="question-4-independence" class="level3">
+<h3 class="anchored" data-anchor-id="question-4-independence">Question 4 – Independence</h3>
+<p><strong>If the response says the sample size is large:</strong></p>
+<p>A large sample size does not ensure that our observations are independent! We could have a sample of 100 golfers, but have repeated observations on each of them – that would be a violation of the independence condition.</p>
+<p><strong>If the response says that the golfers could be related because they play together or have the same coach:</strong></p>
+<p>An independence violation would mean that people playing golf together makes it so that knowing the accuracy of one player gives you nearly <strong>perfect</strong> information about another player. I don’t think this would be the case. People playing together might have similar abilities, but I don’t think I could perfectly predict one golfer’s accuracy from their friend’s.</p>
+<hr>
+</section>
+<section id="question-6-equal-variability" class="level3">
+<h3 class="anchored" data-anchor-id="question-6-equal-variability">Question 6 – Equal Variability</h3>
+<p><strong>If the response doesn’t justify how they decided the condition was / was not violated:</strong></p>
+<p>When assessing equal variability I need for you to tell me <strong>what</strong> you looked at when you evaluated the condition.</p>
+<p><strong>If the response says that the condition is violated because the larger values have less variability:</strong></p>
+<p>Here, it looks like the accuracy values range from roughly 50 to 80 for most of the driving distances. There is slightly less variation in driving distances over 270, but not by much (70% accuracy instead of 80%).</p>
+<p>There are only four observations above 310, which is naturally going to have less variation due to the sample size.</p>
+<p><strong>If the response says the spread of the points are equally distributed or are there is the same amount above and below the line:</strong></p>
+<p>For equal variance, we are looking at the <strong>vertical</strong> spread of the points across the values of x. Here, it looks like the accuracy values range from roughly 50 to 80 for most of the driving distances. There is slightly less variation in driving distances over 280, but not by much (70% accuracy instead of 80%).</p>
+<hr>
+</section>
+<section id="question-7-finding-a-residual" class="level3">
+<h3 class="anchored" data-anchor-id="question-7-finding-a-residual">Question 7 – Finding a residual</h3>
+<p>You are correct, we use the get_regression_points() function to get <strong>all</strong> of the residuals, but how would you calculate one by hand?</p>
+<hr>
+</section>
+<section id="question-10-using-t-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="question-10-using-t-distribution">Question 10 – Using <span class="math inline">\(t\)</span>-distribution</h3>
+<p>Yes! Specifically, because the N and E conditions are not violated, the t-distribution is a reasonable tool for approximating the sampling distribution under the null.</p>
+<hr>
+</section>
+<section id="question-12-slope-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="question-12-slope-interpretation">Question 12 – Slope Interpretation</h3>
+<p><strong>If the response doesn’t increase driving distance by 1 yard:</strong></p>
+<p>Careful! We increase x by <strong>1 unit</strong> when we interpret the slope. So, here we are increasing the driving distance by 1 yard.</p>
+<p><strong>If the response says the decrease in accuracy is 14.2%:</strong></p>
+<p>Careful! The coefficient of -0.142 is already a percentage, so you do not need to convert it to one!</p>
+<hr>
+</section>
+<section id="question-13-slope-coefficient-standard-error" class="level3">
+<h3 class="anchored" data-anchor-id="question-13-slope-coefficient-standard-error">Question 13 – Slope Coefficient &amp; Standard Error</h3>
+<p>b_1 is the slope estimate: -0.142 SE(b_1) is the standard error of the slope: 0.012</p>
+<hr>
+</section>
+<section id="question-16" class="level3">
+<h3 class="anchored" data-anchor-id="question-16">Question 16</h3>
+<p><strong>If the statement rejects but doesn’t state an <span class="math inline">\(\alpha\)</span> value:</strong></p>
+<p>Careful! When you decide to reject the null, you need to state what significance threshold (e.g., 0.05) you used.</p>
+<p><strong>If the statement rejects the null but doesn’t conclude that the alternative is more reasonable (in context):</strong></p>
+<p>Careful! When you reject the null, you need to also state what you would conclude. Do you believe there is / is not a linear relationship between these variables?</p>
+<hr>
+</section>
+<section id="question-17-degrees-of-freedom" class="level3">
+<h3 class="anchored" data-anchor-id="question-17-degrees-of-freedom">Question 17 – Degrees of Freedom</h3>
+<p><strong>If they state the degrees of freedom are 353:</strong></p>
+<p>Careful! With linear regression we use a t-distribution with <strong>n-2</strong> degrees of freedom, not n-1.</p>
+<hr>
+</section>
+<section id="question-19---confidence-interval-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="question-19---confidence-interval-interpretation">Question 19 - Confidence Interval Interpretation</h3>
+<p><strong>If they talk about “chance”:</strong></p>
+<p>We DO NOT say “chance” in our interpretations, as that implies that there is a 95% probability that the parameter is in the interval.</p>
+<p><strong>If they don’t state the “true slope”“</strong></p>
+<p>Your interpretation needs to connect with what population parameter you hope is contained in your interval.</p>
+<p><strong>If they say something strange about population slopes (plural):</strong></p>
+<p>A confidence interval is for <strong>THE</strong> population slope, not 95% of the population slopes. THERE IS ONLY ONE POPULATION SLOPE.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
