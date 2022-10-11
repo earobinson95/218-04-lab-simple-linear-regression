@@ -2,8 +2,8 @@
 title: 'Lab 4: Golf Driving Distance'
 author: "Present Group Member's Names Go Here!"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include = FALSE}
@@ -17,7 +17,7 @@ library(infer)
 library(moderndive)
 ```
 
-**Remember the questions you should answer in Canvas are boldfaced! The Canvas questions may be extensions/requirer thinking deeper about these questions.**
+**Remember the questions you should answer in Canvas are boldfaced!**
 
 ### Golf driving distance
 
@@ -94,7 +94,7 @@ When performing inference on a least squares line, the follow conditions are gen
 
 -   Check this assumption by investigating the sampling method and determining if the observational units are related in any way.
 
-4. Do you believe this condition (independent observations) is violated? Why or why not?
+**4. Do you believe this condition (independent observations) is violated? Why or why not?**
 
 <!-- Your answer goes below this line -->
 
@@ -106,7 +106,7 @@ When performing inference on a least squares line, the follow conditions are gen
 
 -   Check this assumption by examining the scatterplot of the two variables, the relationship on the scatterplot should appear linear.
 
-5. Do you believe this condition (linearity) is violated? Why or why not?
+**5. Do you believe this condition (linearity) is violated? Why or why not?**
 
 <!-- Your answer goes below this line -->
 
@@ -127,7 +127,7 @@ When performing inference on a least squares line, the follow conditions are gen
 To use a $t$-distribution as an approximation for the true sampling distribution, we need to verify that the last two conditions **are not** violated.
 If these conditions are violated, then we will need to use a simulation-based method (e.g. permutation or bootstrapping) instead.
 
-6. Based on the scatterplot, do you believe the condition of equal / constant variability is violated? Why or why not?
+**6. Based on the scatterplot, do you believe the condition of equal / constant variability is violated? Why or why not?**
 
 <!-- Your answer goes below this line -->
 
@@ -182,7 +182,7 @@ Let's compare this to the distribution of the Percent Accuracy!
 ```
 
 
-9. Do you believe the condition of normality is violated? Why or why not?
+**9. Based on these histograms, do you believe the condition of normality is violated? Why or why not?**
 
 <!-- Your answer goes below this line -->
 
@@ -190,7 +190,7 @@ Let's compare this to the distribution of the Percent Accuracy!
 
 
 
-10. Do you believe it is "safe" to use the** $t$**-distribution to approximate the sampling distribution? Justify your answer.
+**10. Do you believe it is "safe" to use the** $t$**-distribution to approximate the sampling distribution? Justify your answer.**
 
 <!-- Your answer goes below this line -->
 
@@ -216,7 +216,7 @@ get_regression_table(_______)
 
 
 
-12. Interpret the estimated slope in context of the problem.
+**12. Interpret the estimated slope in context of the problem.**
 
 <!-- Your answer goes below this line -->
 
@@ -261,13 +261,13 @@ We will use the output from our regression table to obtain the estimate for slop
 
 
 
-16. It is standard to assume a 95% confidence level. Based on the p-value, how much evidence is there against the null hypothesis? *(This is asking you to think about the strength of statistical significant evidence and what that means you conclude. What are you comparing your p-value to? What then do you conclude?.)*
+**16. It is standard to assume a 95% confidence level. Based on the p-value, how much evidence is there against the null hypothesis?**
 
 <!-- Your answer goes below this line -->
 
 
 
-
+**17. Based on the p-value, what decision would you make regarding your null hypothesis?**
 
 
 ### Confidence interval
@@ -283,7 +283,7 @@ $$b_1 \pm t^*_{df} \times SE(b_1).$$
 The $t^*$ multiplier comes from a $t$-distribution with $n-2$ degrees of freedom.
 Recall for a 95% confidence interval, we use the 97.5% percentile (95% of the distribution is in the middle, leaving 2.5% in each tail).
 
-17. The sample size for this study is 354. How many degrees of freedom will we use?
+18. The sample size for this study is 354. How many degrees of freedom will we use?
 
 <!-- Your answer goes below this line -->
 
@@ -294,7 +294,7 @@ Recall for a 95% confidence interval, we use the 97.5% percentile (95% of the di
 
 Fortunately, the regression table also outputs a 95% confidence interval. This interval was calculated using a t-distribution with the number of degrees of freedom you just calculated.
 
-**18. Report the lower and upper values of the confidence interval for the true slope.** *e.g. (lower bound #, upper bound #)*
+19. Report the lower and upper values of the confidence interval for the true slope. *e.g. (lower bound #, upper bound #)*
 
 <!-- Your answer goes below this line -->
 
@@ -303,7 +303,7 @@ Fortunately, the regression table also outputs a 95% confidence interval. This i
 
 
 
-19. Interpret the 95% confidence interval in context of the problem.
+20. Interpret the 95% confidence interval in context of the problem.
 
 <!-- Your answer goes below this line -->
 
@@ -312,15 +312,7 @@ Fortunately, the regression table also outputs a 95% confidence interval. This i
 
 
 
-20. Based on your 95% confidence interval, what decision about your hypotheses would you make? *(Hint: Reject or Fail to Reject)* Why?
-
-<!-- Your answer goes below this line -->
-
-
-
-
-
-**21. Does your decision based on your confidence interval match the decision you made based on your p-value in question 16? Is this surprising? Explain.**
+**21. Does your confidence interval match the decision you made based on your p-value in question 17? Is this surprising? Explain**
 
 <!-- Your answer goes below this line -->
 

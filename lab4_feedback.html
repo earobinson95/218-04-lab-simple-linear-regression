@@ -64,33 +64,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Don’t have answers to 1-2 questions: 4.5</p>
 <p>Don’t have answers to 3-4 questions: 4</p>
 <hr>
-<section id="question-4-independence" class="level3">
-<h3 class="anchored" data-anchor-id="question-4-independence">Question 4 – Independence</h3>
-<p><strong>If the response says the sample size is large:</strong></p>
-<p>A large sample size does not ensure that our observations are independent! We could have a sample of 100 golfers, but have repeated observations on each of them – that would be a violation of the independence condition.</p>
-<p><strong>If the response says that the golfers could be related because they play together or have the same coach:</strong></p>
-<p>An independence violation would mean that people playing golf together makes it so that knowing the accuracy of one player gives you nearly <strong>perfect</strong> information about another player. I don’t think this would be the case. People playing together might have similar abilities, but I don’t think I could perfectly predict one golfer’s accuracy from their friend’s.</p>
+<section id="completion-for-isas" class="level1">
+<h1>COMPLETION (for ISA’s)</h1>
 <hr>
-</section>
-<section id="question-6-equal-variability" class="level3">
-<h3 class="anchored" data-anchor-id="question-6-equal-variability">Question 6 – Equal Variability</h3>
-<p><strong>If the response doesn’t justify how they decided the condition was / was not violated:</strong></p>
-<p>When assessing equal variability I need for you to tell me <strong>what</strong> you looked at when you evaluated the condition.</p>
-<p><strong>If the response says that the condition is violated because the larger values have less variability:</strong></p>
-<p>Here, it looks like the accuracy values range from roughly 50 to 80 for most of the driving distances. There is slightly less variation in driving distances over 270, but not by much (70% accuracy instead of 80%).</p>
-<p>There are only four observations above 310, which is naturally going to have less variation due to the sample size.</p>
-<p><strong>If the response says the spread of the points are equally distributed or are there is the same amount above and below the line:</strong></p>
-<p>For equal variance, we are looking at the <strong>vertical</strong> spread of the points across the values of x. Here, it looks like the accuracy values range from roughly 50 to 80 for most of the driving distances. There is slightly less variation in driving distances over 280, but not by much (70% accuracy instead of 80%).</p>
-<hr>
-</section>
 <section id="question-7-finding-a-residual" class="level3">
 <h3 class="anchored" data-anchor-id="question-7-finding-a-residual">Question 7 – Finding a residual</h3>
 <p>You are correct, we use the get_regression_points() function to get <strong>all</strong> of the residuals, but how would you calculate one by hand?</p>
-<hr>
-</section>
-<section id="question-10-using-t-distribution" class="level3">
-<h3 class="anchored" data-anchor-id="question-10-using-t-distribution">Question 10 – Using <span class="math inline">\(t\)</span>-distribution</h3>
-<p>Yes! Specifically, because the N and E conditions are not violated, the t-distribution is a reasonable tool for approximating the sampling distribution under the null.</p>
 <hr>
 </section>
 <section id="question-12-slope-interpretation" class="level3">
@@ -114,20 +93,77 @@ ul.task-list li input[type="checkbox"] {
 <p>Careful! When you reject the null, you need to also state what you would conclude. Do you believe there is / is not a linear relationship between these variables?</p>
 <hr>
 </section>
-<section id="question-17-degrees-of-freedom" class="level3">
-<h3 class="anchored" data-anchor-id="question-17-degrees-of-freedom">Question 17 – Degrees of Freedom</h3>
+<section id="question-18-degrees-of-freedom" class="level3">
+<h3 class="anchored" data-anchor-id="question-18-degrees-of-freedom">Question 18 – Degrees of Freedom</h3>
 <p><strong>If they state the degrees of freedom are 353:</strong></p>
 <p>Careful! With linear regression we use a t-distribution with <strong>n-2</strong> degrees of freedom, not n-1.</p>
 <hr>
 </section>
-<section id="question-19---confidence-interval-interpretation" class="level3">
-<h3 class="anchored" data-anchor-id="question-19---confidence-interval-interpretation">Question 19 - Confidence Interval Interpretation</h3>
+<section id="question-19-degrees-of-freedom" class="level3">
+<h3 class="anchored" data-anchor-id="question-19-degrees-of-freedom">Question 19 – Degrees of Freedom</h3>
+<p><strong>If they give the confidence interval for the intercept:</strong></p>
+<p>Recall the estimate and inference for the slope is in the second row from the “get_regression_table()” output.</p>
+<p><strong>If they do not correctly identify the lower_ci and upper_ci columns</strong></p>
+<p>The confidence interval bounds are given by ‘lower_ci’ and ‘upper_ci’ in the get_regression_table() output. By default, these give us a 95% confidence interval for our slope and intercept point estimates.</p>
+<hr>
+</section>
+<section id="question-20---confidence-interval-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="question-20---confidence-interval-interpretation">Question 20 - Confidence Interval Interpretation</h3>
 <p><strong>If they talk about “chance”:</strong></p>
 <p>We DO NOT say “chance” in our interpretations, as that implies that there is a 95% probability that the parameter is in the interval.</p>
 <p><strong>If they don’t state the “true slope”“</strong></p>
 <p>Your interpretation needs to connect with what population parameter you hope is contained in your interval.</p>
 <p><strong>If they say something strange about population slopes (plural):</strong></p>
 <p>A confidence interval is for <strong>THE</strong> population slope, not 95% of the population slopes. THERE IS ONLY ONE POPULATION SLOPE.</p>
+<hr>
+</section>
+<section id="question-23---conclusion-in-context" class="level3">
+<h3 class="anchored" data-anchor-id="question-23---conclusion-in-context">Question 23 - Conclusion in context</h3>
+<p><strong>If they state there is a negative association/relationship</strong></p>
+<p>Careful! Our alternative hypotheses only states there is a relationship, not the direction of that relationship.</p>
+<p><strong>If they do not include context of the variables</strong></p>
+<p>What are we looking for an association / relationship between?</p>
+<p><strong>If they do not include context of the population</strong></p>
+<p>For who does this relationship hold? High school golfers? College golfers?</p>
+<p><strong>If they state “A” professional golfer* instead of “ALL”</strong></p>
+<p>Careful! Recall our population includes ALL professional golfers.</p>
+<hr>
+</section>
+</section>
+<section id="canvas-quiz-for-instructor" class="level1">
+<h1>CANVAS QUIZ (for instructor)</h1>
+<hr>
+<section id="question-4-independence" class="level3">
+<h3 class="anchored" data-anchor-id="question-4-independence">Question 4 – Independence</h3>
+<p><strong>If the response says the sample size is large:</strong></p>
+<p>A large sample size does not ensure that our observations are independent! We could have a sample of 100 golfers, but have repeated observations on each of them – that would be a violation of the independence condition.</p>
+<p><strong>If the response says that the golfers could be related because they play together or have the same coach:</strong></p>
+<p>An independence violation would mean that people playing golf together makes it so that knowing the accuracy of one player gives you nearly <strong>perfect</strong> information about another player. I don’t think this would be the case. People playing together might have similar abilities, but I don’t think I could perfectly predict one golfer’s accuracy from their friend’s.</p>
+<hr>
+</section>
+<section id="question-5-linearity" class="level3">
+<h3 class="anchored" data-anchor-id="question-5-linearity">Question 5 – Linearity</h3>
+<hr>
+</section>
+<section id="question-6-equal-variability" class="level3">
+<h3 class="anchored" data-anchor-id="question-6-equal-variability">Question 6 – Equal Variability</h3>
+<p><strong>If the response doesn’t justify how they decided the condition was / was not violated:</strong></p>
+<p>When assessing equal variability I need for you to tell me <strong>what</strong> you looked at when you evaluated the condition.</p>
+<p><strong>If the response says that the condition is violated because the larger values have less variability:</strong></p>
+<p>Here, it looks like the accuracy values range from roughly 50 to 80 for most of the driving distances. There is slightly less variation in driving distances over 270, but not by much (70% accuracy instead of 80%).</p>
+<p>There are only four observations above 310, which is naturally going to have less variation due to the sample size.</p>
+<p><strong>If the response says the spread of the points are equally distributed or are there is the same amount above and below the line:</strong></p>
+<p>For equal variance, we are looking at the <strong>vertical</strong> spread of the points across the values of x. Here, it looks like the accuracy values range from roughly 50 to 80 for most of the driving distances. There is slightly less variation in driving distances over 280, but not by much (70% accuracy instead of 80%).</p>
+<hr>
+</section>
+<section id="question-9-normality" class="level3">
+<h3 class="anchored" data-anchor-id="question-9-normality">Question 9 – Normality</h3>
+<hr>
+</section>
+<section id="question-10-using-t-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="question-10-using-t-distribution">Question 10 – Using <span class="math inline">\(t\)</span>-distribution</h3>
+<p>Yes! Specifically, because the N (normality) and E (equal variance) conditions are not violated, the t-distribution is a reasonable tool for approximating the sampling distribution under the null (aka approximating our null distribution).</p>
+</section>
 </section>
 
 </main>

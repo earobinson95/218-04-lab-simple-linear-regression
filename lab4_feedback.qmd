@@ -11,6 +11,107 @@ Don't have answers to 3-4 questions: 4
 
 ---
 
+# COMPLETION (for ISA's)
+
+---
+
+### Question 7 -- Finding a residual
+
+You are correct, we use the get_regression_points() function to get **all** of the residuals, but how would you calculate one by hand?
+
+---
+
+### Question 12 -- Slope Interpretation
+
+**If the response doesn't increase driving distance by 1 yard:**
+
+Careful! We increase x by **1 unit** when we interpret the slope. So, here we are increasing the driving distance by 1 yard. 
+
+**If the response says the decrease in accuracy is 14.2%:**
+
+Careful! The coefficient of -0.142 is already a percentage, so you do not need to convert it to one!
+
+---
+
+### Question 13 -- Slope Coefficient & Standard Error
+
+b_1 is the slope estimate: -0.142 SE(b_1) is the standard error of the slope: 0.012
+
+---
+
+### Question 16
+
+**If the statement rejects but doesn't state an $\alpha$ value:**
+
+Careful! When you decide to reject the null, you need to state what significance threshold (e.g., 0.05) you used.
+
+**If the statement rejects the null but doesn't conclude that the alternative is more reasonable (in context):**
+
+Careful! When you reject the null, you need to also state what you would conclude. Do you believe there is / is not a linear relationship between these variables?
+
+---
+
+### Question 18 -- Degrees of Freedom
+
+**If they state the degrees of freedom are 353:**
+
+Careful! With linear regression we use a t-distribution with **n-2** degrees of freedom, not n-1. 
+
+
+---
+
+### Question 19 -- Degrees of Freedom
+
+**If they give the confidence interval for the intercept:**
+
+Recall the estimate and inference for the slope is in the second row from the "get_regression_table()" output.
+
+**If they do not correctly identify the lower_ci and upper_ci columns**
+
+The confidence interval bounds are given by 'lower_ci' and 'upper_ci' in the get_regression_table() output. By default, these give us a 95% confidence interval for our slope and intercept point estimates.
+
+---
+
+### Question 20 - Confidence Interval Interpretation
+
+**If they talk about "chance":**
+
+We DO NOT say "chance" in our interpretations, as that implies that there is a 95% probability that the parameter is in the interval.
+
+**If they don't state the "true slope""**
+
+Your interpretation needs to connect with what population parameter you hope is contained in your interval.
+
+**If they say something strange about population slopes (plural):**
+
+A confidence interval is for **THE** population slope, not 95% of the population slopes. THERE IS ONLY ONE POPULATION SLOPE.
+
+---
+
+### Question 23 - Conclusion in context
+
+**If they state there is a negative association/relationship**
+
+Careful! Our alternative hypotheses only states there is a relationship, not the direction of that relationship.
+
+**If they do not include context of the variables**
+
+What are we looking for an association / relationship between?
+
+**If they do not include context of the population**
+
+For who does this relationship hold? High school golfers? College golfers?
+
+**If they state "A" professional golfer* instead of "ALL"**
+
+Careful! Recall our population includes ALL professional golfers.
+
+---
+
+# CANVAS QUIZ (for instructor)
+
+---
+
 ### Question 4 -- Independence
 
 **If the response says the sample size is large:**
@@ -47,70 +148,10 @@ For equal variance, we are looking at the **vertical** spread of the points acro
 
 ---
 
-### Question 7 -- Finding a residual
-
-You are correct, we use the get_regression_points() function to get **all** of the residuals, but how would you calculate one by hand?
-
----
-
 ### Question 9 -- Normality
 
 ---
 
 ### Question 10 -- Using $t$-distribution
 
-Yes! Specifically, because the N (normality) and E (equal variance) conditions are not violated, the t-distribution is a reasonable tool for approximating the sampling distribution under the null. 
-
----
-
-### Question 12 -- Slope Interpretation
-
-**If the response doesn't increase driving distance by 1 yard:**
-
-Careful! We increase x by **1 unit** when we interpret the slope. So, here we are increasing the driving distance by 1 yard. 
-
-**If the response says the decrease in accuracy is 14.2%:**
-
-Careful! The coefficient of -0.142 is already a percentage, so you do not need to convert it to one!
-
----
-
-### Question 13 -- Slope Coefficient & Standard Error
-
-b_1 is the slope estimate: -0.142 SE(b_1) is the standard error of the slope: 0.012
-
----
-
-### Question 16
-
-**If the statement rejects but doesn't state an $\alpha$ value:**
-
-Careful! When you decide to reject the null, you need to state what significance threshold (e.g., 0.05) you used.
-
-**If the statement rejects the null but doesn't conclude that the alternative is more reasonable (in context):**
-
-Careful! When you reject the null, you need to also state what you would conclude. Do you believe there is / is not a linear relationship between these variables?
-
----
-
-### Question 17 -- Degrees of Freedom
-
-**If they state the degrees of freedom are 353:**
-
-Careful! With linear regression we use a t-distribution with **n-2** degrees of freedom, not n-1. 
-
----
-
-### Question 19 - Confidence Interval Interpretation
-
-**If they talk about "chance":**
-
-We DO NOT say "chance" in our interpretations, as that implies that there is a 95% probability that the parameter is in the interval.
-
-**If they don't state the "true slope""**
-
-Your interpretation needs to connect with what population parameter you hope is contained in your interval.
-
-**If they say something strange about population slopes (plural):**
-
-A confidence interval is for **THE** population slope, not 95% of the population slopes. THERE IS ONLY ONE POPULATION SLOPE.
+Yes! Specifically, because the N (normality) and E (equal variance) conditions are not violated, the t-distribution is a reasonable tool for approximating the sampling distribution under the null (aka approximating our null distribution). 
